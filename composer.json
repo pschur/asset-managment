@@ -1,0 +1,22 @@
+{
+  "name": "pschur/asset-managment",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["assets", "asset-managment", "css", "js"],
+  "authors": [
+    {
+      "name": "Paul Schur",
+      "email": "projekt.paul.schur@gmail.com",
+      "homepage": "https://github.com/pschur",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pschur\\Assets\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.1"
+  }
+}
