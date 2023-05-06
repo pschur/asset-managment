@@ -1,0 +1,1 @@
+document.getElementById('demo').innerHTML = '<a href="https://google.de">Google (Ich bin cool!)</a>'
