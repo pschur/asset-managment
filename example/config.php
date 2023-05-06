@@ -3,7 +3,7 @@
 use Pschur\Assets\Asset;
 
 require __DIR__.'/../vendor/autoload.php';
-Asset::$auto_optimize = true;
+Asset::setAutoOptimize(true);
 Asset::setAssetCache(__DIR__.'/cache');
 Asset::setAssetUrl('/assets.php');
 

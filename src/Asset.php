@@ -13,7 +13,7 @@ class Asset
 
     private static string $assetCache = '';
 
-    public static bool $auto_optimize = false;
+    private static bool $auto_optimize = false;
 
     public static function js(string $content){
         self::$assets['js'][] = $content;
@@ -37,6 +37,14 @@ class Asset
     public static function setAssetCache(string $assetCache): void
     {
         self::$assetCache = ltrim($assetCache, '/');
+    }
+
+    /**
+     * @param bool $auto_optimize
+     */
+    public static function setAutoOptimize(bool $auto_optimize): void
+    {
+        self::$auto_optimize = $auto_optimize;
     }
 
     public static function cache(){
